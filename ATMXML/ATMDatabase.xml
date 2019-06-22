@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ATMDatabase SYSTEM "C:\Users\Admin\Desktop\SeminariNeBaza\ATMXML\ATM.dtd">
+<ATMDatabase>
+	<Klientet IDKlienti="A140204">
+		<Emri>Bujar</Emri>
+		<Mbiemri>Shulemaja</Mbiemri>
+		<Mosha>18</Mosha>
+	</Klientet>
+	<Klientet IDKlienti="A140201">
+		<Emri>Gani</Emri>
+		<Mbiemri>Thaçi</Mbiemri>
+		<Mosha>25</Mosha>
+	</Klientet>
+	<Banka IDBanka="B140204">
+		<BEmri>NLB</BEmri>
+		<Vendi>Eqrem Qabej</Vendi>
+	</Banka>
+	<Banka IDBanka="B140205">
+		<BEmri>TEB</BEmri>
+		<Vendi>Lesna</Vendi>
+	</Banka>
+	<ATM ID_ATM="A1" IDBanka="B140204">
+		<DataEVendosjes> 18/08/2011 </DataEVendosjes>
+		<Adresa> Menza e Studenteve </Adresa>
+		<ShumaEParaveNeATM> 8560 </ShumaEParaveNeATM>
+	</ATM>
+	<ATM ID_ATM="A2" IDBanka="B140205">
+		<DataEVendosjes> 12/01/2008 </DataEVendosjes>
+		<Adresa> Ulpiane </Adresa>
+		<ShumaEParaveNeATM> 9000 </ShumaEParaveNeATM>
+	</ATM>
+	<Xhirollogaria ID_Xhirollogaria="XH1" IDKlienti="A140204">
+		<GjendjaELlogarise> 652 </GjendjaELlogarise>
+	</Xhirollogaria>
+	<Xhirollogaria ID_Xhirollogaria="XH2" IDKlienti="A140201">
+		<GjendjaELlogarise> 140 </GjendjaELlogarise>
+	</Xhirollogaria>
+	<Transaksioni ID_Transaksioni="T1" ID_ATM="A1">
+		<LlojiITransaksionit> Terheqje </LlojiITransaksionit>
+		<Shuma> 20 </Shuma>
+		<Data> 09/01/2019 </Data>
+	</Transaksioni>
+	<Transaksioni ID_Transaksioni="T2" ID_ATM="A2">
+		<LlojiITransaksionit> Deposit </LlojiITransaksionit>
+		<Shuma> 100 </Shuma>
+		<Data> 04/01/2019 </Data>
+	</Transaksioni>
+	<TN1 ID_Transaksioni="T1" ID_Xhirollogaria="XH1">
+		<Valuta> Euro </Valuta>
+	</TN1>
+	<TN1 ID_Transaksioni="T2" ID_Xhirollogaria="XH2">
+		<Valuta> Dollar </Valuta>
+	</TN1>
+</ATMDatabase>
